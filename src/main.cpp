@@ -1,11 +1,11 @@
-/**************************************************
-* Ò»·ÖÖÓGitÊµÕ½ÈëÃÅ | GitOneMinute
-* ³öÆ·£ºÖÜĞı»úÆ÷ÊÓ¾õ https://space.bilibili.com/387188622
-* ¿Î³ÌÖ÷Ò³£ºhttps://www.roundvision.cc/category/git/
-* github²Ö¿âÂ·¾¶£ºhttps://github.com/zhouxuan2023/GitOneMinute
+ï»¿/**************************************************
+* ä¸€åˆ†é’ŸGitå®æˆ˜å…¥é—¨ | GitOneMinute
+* å‡ºå“ï¼šå‘¨æ—‹æœºå™¨è§†è§‰ https://space.bilibili.com/387188622
+* è¯¾ç¨‹ä¸»é¡µï¼šhttps://www.roundvision.cc/category/git/
+* githubä»“åº“è·¯å¾„ï¼šhttps://github.com/zhouxuan2023/GitOneMinute
 * 
-* Ê±¼ä´ÁÔÚÏßÍøÕ¾£ºhttps://www.timetoolhub.com/zh
-* Í¨¹ı "Ãû×Ö hello git! ´ËÊ±µÄÊ±¼ä´Á" µÄ¸ñÊ½£¬ÔÚ±¾ÏîÄ¿ÁôÏÂÄãµÄÃû×Ö°É£¡
+* æ—¶é—´æˆ³åœ¨çº¿ç½‘ç«™ï¼šhttps://www.timetoolhub.com/zh
+* é€šè¿‡ "åå­— hello git! æ­¤æ—¶çš„æ—¶é—´æˆ³" çš„æ ¼å¼ï¼Œåœ¨æœ¬é¡¹ç›®ç•™ä¸‹ä½ çš„åå­—å§ï¼
 * 
 ***************************************************/
 
@@ -17,13 +17,13 @@
 #include <ctime>
 
 int main() {
-    // ³õÊ¼»¯×Ö·û´®ÁĞ±í
+    // åˆå§‹åŒ–å­—ç¬¦ä¸²åˆ—è¡¨
     std::vector<std::string> messages = {
-                "zhouxuan hello git! 2025Äê09ÔÂ09ÈÕ 22:06:46",
-                "ÖÜĞı»úÆ÷ÊÓ¾õ hello git! 2025Äê09ÔÂ09ÈÕ 22:09:22",
+                "zhouxuan hello git! 2025å¹´09æœˆ09æ—¥ 22:06:46",
+                "å‘¨æ—‹æœºå™¨è§†è§‰ hello git! 2025å¹´09æœˆ09æ—¥ 22:09:22",
     }; 
 
-    // »ñÈ¡×îºó100ĞĞ
+    // è·å–æœ€å100è¡Œ
     std::vector<std::string> last100;
     if (messages.size() > 100) {
         last100.assign(messages.end() - 100, messages.end());
@@ -32,14 +32,14 @@ int main() {
         last100 = messages;
     }
 
-    // ÖğĞĞ´òÓ¡£¬Ã¿ĞĞÖ®¼äÓĞÑÓ³Ù
+    // é€è¡Œæ‰“å°ï¼Œæ¯è¡Œä¹‹é—´æœ‰å»¶è¿Ÿ
     for (const auto& line : last100) {
         std::cout << line << std::endl;
-        std::this_thread::sleep_for(std::chrono::milliseconds(100)); // 100ºÁÃëÑÓ³Ù
+        std::this_thread::sleep_for(std::chrono::milliseconds(100)); // 100æ¯«ç§’å»¶è¿Ÿ
     }
 
-    // µÈ´ıÓÃ»§°´¼üÍË³ö
-    std::cout << "\n°´ÈÎÒâ¼üÍË³ö..." << std::endl;
+    // ç­‰å¾…ç”¨æˆ·æŒ‰é”®é€€å‡º
+    std::cout << "\næŒ‰ä»»æ„é”®é€€å‡º..." << std::endl;
     std::cin.get();
 
     return 0;
