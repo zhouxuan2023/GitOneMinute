@@ -17,3 +17,8 @@ file(
 	main.cpp
 )
 add_executable(${PROJECT_NAME} ${_SRCS})
+
+#S.4 设置默认启动项目
+if(CMAKE_GENERATOR MATCHES "Visual Studio")
+    set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${PROJECT_NAME})
+endif()
