@@ -57,9 +57,24 @@ smartgit官网：https://www.smartgit.dev/
 
 # 3、配置smartgit
 
-### 
+当你首次使用smartgit推送你的提交时，因为还没有配置github令牌，所以推送是会报错的，同时软件右下角也会提示你进行github的配置：
 
+![](./../image/15.png)
 
+点击“Configure Hosting Provider”按钮：
+会进入网页的github，让你登录github账号（如果github已经登录了，网页会直接显示登录成功）。
+
+回到软件，软件会有一个弹窗，让你输入你的Github账号(邮箱)和密码：
+
+![](./../image/17.png)
+
+输入正确的用户名和密码，点击“登录”按钮：
+
+![](./../image/18.png)
+
+点击“创建”按钮，即可完成令牌的创建。
+
+再次推送提交，即可推送成功。
 
 
 
@@ -90,13 +105,13 @@ https://github.com/zhouxuan2023/GitOneMinute
 如果你对C++和CMake不了解，可以看我另一门免费课程：
 [《](https://www.bilibili.com/video/BV1YG411e7D5)[图像处理软件开发全面入门教程：](https://www.bilibili.com/video/BV1YG411e7D5)[C++/QT/](https://www.bilibili.com/video/BV1YG411e7D5)[Opencv](https://www.bilibili.com/video/BV1YG411e7D5)[/](https://www.bilibili.com/video/BV1YG411e7D5)[CMake](https://www.bilibili.com/video/BV1YG411e7D5)[/](https://www.bilibili.com/video/BV1YG411e7D5)[软件开发](https://www.bilibili.com/video/BV1YG411e7D5)[/](https://www.bilibili.com/video/BV1YG411e7D5)[设计模式](https://www.bilibili.com/video/BV1YG411e7D5)[/](https://www.bilibili.com/video/BV1YG411e7D5)[动态库](https://www.bilibili.com/video/BV1YG411e7D5)[》](https://www.bilibili.com/video/BV1YG411e7D5)
 
-## 4.1源码编译
+# 5、src源码编译
 
-编译源码也很简单，打开CMake-GUI工具，编译源码即可生成VS的sln文件：
+编译源码也很简单，打开CMake-GUI工具，按照截图五步走，编译源码即可生成VS的sln文件：
 
 ![](./../image/12.png)
 
-
+![](./../image/19.png)
 
 
 
